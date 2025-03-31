@@ -1,7 +1,7 @@
 import re
 
 drum_channel = "9"
-name_pattern = re.compile(r'^(.+)\/([^/]+)\.(.*)$')
+name_pattern = re.compile(r'^(.+)[/\\]([^/\\]+)\.(.*)$')
 comment_pattern = re.compile(r'\s*[\#\;]')
 tempo_pattern = re.compile(r'(\d+),\s*(\d+),\s*(Tempo),\s*(\d+)')
 track_pattern = re.compile(r'\s*(\d+)\s*,\s*\d+\s*,\s*\w+_c\s*,\s*(\d+)')
